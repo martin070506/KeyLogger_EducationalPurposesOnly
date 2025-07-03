@@ -19,7 +19,7 @@ def resource_path(relative_path):
         base_path = os.path.abspath(".")
     return os.path.join(base_path, relative_path)
 
-cred = credentials.Certificate(resource_path("credentials.json"))
+cred = credentials.Certificate(resource_path("add the firebase json credentials path in here"))
 firebase_admin.initialize_app(cred, {
     "databaseURL": "{Insert FireBase Url here}"
 })
